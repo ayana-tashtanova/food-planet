@@ -1,0 +1,167 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 7px 0;
+  flex-wrap: wrap;
+  background-color: white;
+  box-shadow: 0 4px 100px rgba(0, 0, 0, 0.3);
+}
+.title-container {
+  display: flex;
+  align-items: center;
+}
+.header-img {
+  width: 25px;
+  height: 25px;
+}
+.header-h1 {
+  font-size: 25px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: rgb(1, 1, 50);
+}
+nav {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.nav-buttons {
+  text-decoration: none;
+  padding: 4px 10px;
+  color: #2f2f2f;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.nav-buttons:hover {
+  color: white;
+  background-color: hwb(348 0% 0%);
+}
+.nav-buttons:active {
+  border-radius: 5px;
+  background-color: rgba(174, 5, 5, 0.859);
+  color: white;
+  text-decoration: underline;
+}
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.icons-img {
+  width: 13px;
+  height: 13px;
+  display: flex;
+  justify-content: center;
+}
+.icons-container {
+  padding: 8px;
+  border-radius: 50%;
+  background-color: rgb(226, 231, 241);
+}
+main {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  width: auto;
+  height: auto;
+}
+.main-content {
+  margin-top: 25px;
+  border-radius: 3px;
+  padding: 0 20px;
+  height: 303px;
+  background-color: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 18%;
+  box-sizing: border-box;
+}
+.image-food {
+  height: 200px;
+  object-fit: contain;
+  max-width: 100%;
+}
+h2 {
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: rgb(1, 1, 50);
+  font-size: 20px;
+}
+.rating {
+  font-size: 17px;
+}
+.product-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  padding: 0 0 10px 0;
+}
+.price-backet-container {
+  display: flex;
+  gap: 3px;
+  margin-top: 3px;
+}
+p {
+  color: red;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bold;
+  padding: 0 5px;
+  font-size: 17px;
+}
+.basket {
+  padding: 5px 20px;
+  font-size: 13px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-color: rgb(1, 1, 50);
+  color: rgba(255, 255, 255, 0.744);
+  border-radius: 2px;
+  border: none;
+  white-space: nowrap;
+}
+.burger-menu {
+  display: none;
+  width: 25px;
+}
+@media (max-width: 1024px) {
+  .main-content {
+    width: 45%;
+  }
+  nav {
+    display: none;
+  }
+  .header-icons {
+    display: none;
+  }
+  .burger-menu {
+    display: block;
+  }
+}
+@media (max-width: 420px) {
+  .main-content {
+    width: 100%;
+  }
+  nav {
+    display: none;
+  }
+  .header-icons {
+    display: none;
+  }
+  .burger-menu {
+    display: block;
+  }
+}
+@media (min-width: 1024px) {
+  .main-content {
+    width: 18%;
+  }
+}
